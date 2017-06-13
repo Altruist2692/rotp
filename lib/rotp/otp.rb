@@ -13,7 +13,7 @@ module ROTP
     # @returns [OTP] OTP instantiation
     def initialize(s, options = {})
       @digits = options[:digits] || DEFAULT_DIGITS
-      @digest = options[:digest] || "sha1"
+      @digest = options[:digest] || "sha512"
       @secret = s
     end
 
